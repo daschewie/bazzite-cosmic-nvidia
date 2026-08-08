@@ -21,11 +21,11 @@ modules:
     repos:
       copr:
         - atim/starship
-        # - imput/helium
+        - imput/helium
     install:
       packages:
         - micro
-        # - helium-bin
+        - helium-bin
         - fd-find
         - ripgrep
         - fzf
@@ -33,7 +33,11 @@ modules:
         - zoxide
         - eza
         - starship
-        # - "@cosmic-desktop-environment"
+    group-install:
+      packages:
+        - cosmic-desktop-environment
+        - development-tools
+      with-optional: true
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
